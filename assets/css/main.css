@@ -126,6 +126,7 @@ input, select, textarea {
 	body, input, select, textarea {
 		color: #111111;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		/*font-family: "Lato", Helvetica, sans-serif;*/
 		font-size: 17pt;
 		font-weight: 300;
 		letter-spacing: 0.025em;
@@ -143,7 +144,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 13pt;
 			}
 
 		}
@@ -151,7 +152,7 @@ input, select, textarea {
 		@media screen and (max-width: 360px) {
 
 			body, input, select, textarea {
-				font-size: 11pt;
+				font-size: 14pt;
 			}
 
 		}
@@ -194,12 +195,37 @@ input, select, textarea {
 	}
 
 	p.quote{
-		font-size: x-large;
+		font-size: 17pt;
 		font-weight: bolder;
 		color: #8b8b8b;
 		text-align: center;
 		margin: 2em 4em;
 	}
+
+		@media screen and (max-width: 1680px) {
+
+			p.quote {
+				font-size: 14pt;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			p.quote {
+				font-size: 13pt;
+				margin: 2em;
+			}
+
+		}
+
+		@media screen and (max-width: 360px) {
+
+			p.quote {
+				font-size: 14pt;
+			}
+
+		}
 
 	h1 {
 		color: #111111;
@@ -2210,6 +2236,10 @@ input, select, textarea {
 
 /* Image */
 
+	.clickableptt{
+		width: 50%;
+	}
+
 	.image {
 		border: 0;
 		display: inline-block;
@@ -2268,6 +2298,12 @@ input, select, textarea {
 				margin-right: auto;
 			}
 
+			.image.main.portrait {
+				width: 30%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
 			.image.main.flex {
 				width: 70%;
 				margin-left: auto;
@@ -2315,6 +2351,13 @@ input, select, textarea {
 				padding: 1em;
 			}
 
+			@media screen and (max-width:480px) {
+				.flex-container-one{
+					display: none;
+					width: 100%;
+				}
+			}
+
 		.flex-container-two {
 			display: flex;
 			margin: 2em 0;
@@ -2339,7 +2382,7 @@ input, select, textarea {
 		}
 
 			.flex-container-three .col1 {
-				flex: 0.5;
+				flex: 0.4828;
 			}
 
 			.flex-container-three .col2 {
@@ -2365,7 +2408,26 @@ input, select, textarea {
 				flex: 0.57;
 			}
 		
-		
+		.row {
+			display: flex;
+			margin-left: auto;
+			margin-right: auto;
+			justify-content: center;
+			/*align-items: center;	*/
+		}
+
+			.col {
+				flex: 20%;
+				padding: 5px;
+				max-width: 30%;
+			}
+
+			.columne {
+				flex: 20%;
+				padding: 5px;
+				max-width: 25%;
+				text-align: center;
+			}
 
 		/*	.flex-container .image {
 				margin: 8px 0;
@@ -2523,10 +2585,15 @@ input, select, textarea {
 
 /* Pagination */
 
+	.pag {
+		text-align: center;
+	}
+
 	ul.pagination {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
+		
 	}
 
 		ul.pagination li {
@@ -2553,7 +2620,7 @@ input, select, textarea {
 			}
 
 				ul.pagination li > .page.active {
-					background-color: #ffffff;
+					background-color: #53e3fb;
 					color: #242943;
 				}
 
@@ -2672,8 +2739,8 @@ input, select, textarea {
 		background-color: transparent;
 		border: 0;
 		border-radius: 0;
-		box-shadow: inset 0 0 0 2px #ffffff;
-		color: #ffffff;
+		box-shadow: inset 0 0 0 2px #000000;
+		color: #000000;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.8em;
@@ -3094,7 +3161,7 @@ input, select, textarea {
 			-webkit-flex-direction: row;
 			-ms-flex-direction: row;
 			flex-direction: row;
-			background-color: #2e3450;
+			background-color: #fdfdfd;
 		}
 
 			.spotlights > section > .image {
@@ -3155,7 +3222,7 @@ input, select, textarea {
 				-moz-flex-direction: row-reverse;
 				-webkit-flex-direction: row-reverse;
 				-ms-flex-direction: row-reverse;
-				flex-direction: row-reverse;
+				flex-direction: row;
 				background-color: #333856;
 			}
 
@@ -3635,7 +3702,7 @@ input, select, textarea {
 				#banner > .inner .content p {
 					font-size: 0.7em;
 					font-weight: 600;
-					letter-spacing: 0.25em;
+					letter-spacing: 0.20em;
 					text-transform: uppercase;
 				}
 
@@ -3654,7 +3721,7 @@ input, select, textarea {
 		}
 
 		#banner.style2:after {
-			background-color: #8d82c4;
+			background-color: #ffffff;
 		}
 
 		#banner.style3:after {
@@ -3785,6 +3852,7 @@ input, select, textarea {
 			border-bottom: solid 1px rgba(212, 212, 255, 0.1);
 		}
 
+
 /* Contact */
 
 	#contact {
@@ -3871,15 +3939,24 @@ input, select, textarea {
 
 /* Footer */
 
+	.copyright1 {
+		text-align: center;
+	}
+
+	h1.comingsoon {
+		text-align: center;
+		margin-bottom: 5em;
+	}
+
 	#footer .copyright {
-		font-size: 0.8em;
+		font-size: 1em;
 		list-style: none;
 		padding-left: 0;
 	}
 
 		#footer .copyright li {
 			border-left: solid 1px rgba(212, 212, 255, 0.1);
-			color: rgba(244, 244, 255, 0.2);
+			color: rgba(0, 0, 0, 0.9);
 			display: inline-block;
 			line-height: 1;
 			margin-left: 1em;

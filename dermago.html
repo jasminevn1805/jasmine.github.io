@@ -1,0 +1,284 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Dermago</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<header id="header" class="alt">
+					<a href="index.html" class="logo"><strong>JASMINE</strong></a>
+					<nav id="menu0">
+						<a class="active" href="index.html">Work</a>
+						<a class="active" href="about.html">About</a>
+					</nav>
+				</header>
+
+				<!-- Menu
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Work</a></li>
+							<li><a href="landing.html">About</a></li>
+						</ul>
+					</nav>
+
+				-->
+
+				<!-- Main -->
+				<div id="main" class="alt">
+
+					<!-- One -->
+					<section id="one">
+						<div class="inner">
+							<header class="major">
+								<h1>Dermago</h1>
+								<p><strong>Web Application</strong></p>
+							</header>
+							<p>Team: ORO Health<br/>My role: Product designer</p>
+							<span class="image main"><img src="images/pic176.png" alt="" /></span>
+							<p>Dermago offers an asynchronous consultation solution for healthcare professionals seeking to enhance patient access and care. It eliminates the need for scheduled appointments between patients and doctors. Instead, exchanges occur continuously and flexibly through instant messaging, accommodating the convenience of both parties. This approach significantly enhances time management for all involved.</p>
+							<h3>Context</h3>
+							<p>Dermago is the flagship product of ORO Health Inc., specializing in a Dermatology Platform facilitating seamless connections between dermatologists and patients for virtual/asynchronous consultations. Since 2020, Dermago has operated this online platform, primarily serving patients across Canada, with a focus on Quebec and Ontario.
+							</p>
+							<p>The motivation behind the development of this product stems from the overwhelming volume of cases that doctors faced, particularly during the pandemic. This platform offers flexibility to both doctors and their patients through its asynchronous concept. This feature allows users to engage with the platform at their convenience, rather than being constrained by specific time slots.</p>
+							<p>The flow is very simple. The patient submits consultation via the platform, soon the doctor will receive the request and soon does the Diagnosis and Treatments based on the case details. Both of the parties will communicate directly and handly on the platform via the message feature. The patient then will receive their Diagnosis & Treatments from the doctor. The consultation is closed if everything is fine after all. If not, they will be able to make a Follow-up Consultation process.</p>
+							
+							<h3>Goal</h3>
+							<p>Our high-level goals were to:</p>
+							<ol>
+								<li>Enhance accessibility and user-friendliness across diverse demographics and geographical locations.</li>
+								<li>Empower patients with full control over their time and financial resources.</li>
+								<li>Create a platform conducive to innovation and facilitate deeper engagement for healthcare pratitioners.</li>
+							</ol>
+							<h3>My responsibilities</h3>
+							<p>I led the design aspect of the product from October 2021 to September 2022, collaborating closely with a Product Owner and stakeholders on the majority of product features. Additionally, I partnered with a front-end dev, back-end devs, and Marketing Specialists throughout the product implementation phase.</p>
+							<h4 class="devider">...</h4>
+							<!-- <h1>Title</h1> -->
+							<h2>Conceptual Development</h2><br>
+							<h3>Target and challenge</h3>
+							<p>The primary focus initially was to remember who the users are and where they were within the flow.<br/>
+								Based on the data collected over years of close collaboration with patients and healthcare practitioners in the clinics, we possessed the necessary insights to define the target user groups for the product. After conducting multiple sessions with stakeholders, including medical doctors, business development professionals, and marketing specialists, we identified threee distinct target user groups.
+								<ol>
+									<li> <b>Patient</b> - Individuals experiencing skin problems who utilize the platform to submit consultations. This user group primarily comprises individuals aged between 30 and 50. They may seek consultations for themselves or act as representatives for someone under their care.</li>
+									<li> <b>Dermatologist</b> - Medical professionals, including doctors or nurses, responsible for diagnosing and treating patients' skin conditions.</li>
+									<li><b>The Admin</b> - Medical professionals, either doctors or nurses, tasked with managing all aspects related to patients, doctors, and clinic operations.</li>
+								</ol>
+								All users, regardless of their level of tech-savviness, were considered in the design process. The primary requirements focused on <b>ensuring mobile friendliness and ease of use for individuals</b> without specialized knowledge in technology or telemedicine. The platform aimed to provide users with a seamless experience, allowing them to easily access the information or services they sought. Additionally, for users who preferred to explore, the content was designed to be easily discoverable.</p>
+						
+
+							<h3>Set the scope</h3>
+							<p>Defining the scope provides a reference point for understanding what the product should accomplish for both users and the business. To achieve this, it's beneficial to list features and functions that represent the desired outcome. These features and functions are derived from the users' needs, aiding in clarifying the problems to be addressed before exploring potential solutions.</p>
+
+							<span class="image main flex"><img src="images/pic170.png" alt="Feature scope" /></span>
+							<figcaption>Feature scope</figcaption>
+							<br><br>
+							
+							<h2>Significant Problems and Solutions</h2><br>
+							<!--Patient-->
+							<h3>Patient</h3>
+							<br/>
+							<ol>
+								<!--Probelem #1-->
+								<li><h4>Submit/Re-submit a consultation request for myself or someone else</h4><br>
+									<h5>Context</h5>
+									<p><i>Use Case #1</i> - I am a patient and also an account holder, they may need to submit consultations for myself.</p>
+									<p><i>Use Case #2</i> - I am an account holder, I want to submit consultations for my child or any individual in my care who may be underage or less proficient with technology and requires assistance, on behafl of them.</p>
+									 <p><i>Use case 3</i> - I am an existing patient, having completed my initial consultation, return as existing patients, I wish to submit a new consultation request.</p>
+									
+									<h5>Question</h5>
+									<p>"How can I design the process to enable patients to easily re-submit a new consultation for themselves or someone in their care without having to re-enter all their personal information?". Achieving this efficiently and confidently would greatly enhance user satisfaction.</p>
+
+									<h5>Solution</h5>
+									<ul>
+										<li><i>Auto saving the patient profile after consultation is submitted successfully.</i><br/>
+											The system will securely store all personal information provided by patients, creating profiles on the system, and will be automatically populated the saved data for future consultations. This feature speeds up the onboarding process for patients, enhancing efficiency significantly.</li><br/>
+										<li><i>Manage patients' profiles inside Account Settings of the platform.</i><br/>
+											The patient who holds the account will be able to edit their family members' information at any time.</li>
+									</ul>
+									<span class="image main"><img src="images/pic171.png" alt="" /></span>
+							 		<figcaption>Patient - Onboarding for New Patient / Existing Patient and Patients' Profiles management</figcaption>
+									<br/>
+								</li>
+
+								<!--Probelem #2-->
+								<li><h4>Submit a Follow-up Consultation</h4><br>
+									<h5>Context</h5>
+									<p>After each consultation, patients have a seven-day window to contact the doctor regarding any treatment-related issues or changes in their condition. However, beyond this timeframe and after the consultation is closed, if the patient shows no improvement or experiences adverse reactions to the prescribed medication, they should contact the doctor for further guidance or treatment modification. This may necessitate a follow-up consultation.</p>
+									<p>For the same skin issue, patients expect to receive treatment from the same doctor who initially consulted with them. This ensures they do not have to repeatedly recount their medical history from the beginning multiple times.</p>
+									<p>Moreover, from a business perspective, offering the Follow-up feature along with a new line of suitable products at a reasonable cost would enhance the flexibility of the clinic's services.</p>
+									<h5>Question</h5>
+									<p>"How can we ensure that patients can easily distinguish between two distinct services: New consultation and Follow-up consultation, and then confidently submit a consultation as a Follow-up?"</p>
+
+									<h5>Solution</h5>
+									<ul>
+										<li><i>Add Follow-up Consultation as a separate service.</i><br/>
+											Introducing patients to a new service option, the Follow-Up Consultation, at the first step of onboarding enables them to quickly and confidently differentiate between two distinct services: New Consultation versus Follow-Up Consultation.</li><br/>
+										<li><i>Allow patients to update their skin progress at the time.</i><br/>
+											The onboarding flow for the Follow-up consultation will automatically re-populate all essential information inherited from the previous consultation, for cases where patients are following up. However, to provide the doctor with an update on treatment progress since the last consult, the platform should prompt patients to input additional information and upload new photos of their skin condition.</li><br/>
+											<li><i>Give patients a simple way to track the consultations they follow up.</i><br/>
+												In addition to displaying all consultations in the list, the design should illustrate the relationship between parent and child cases, particularly in terms of follow-up consultations.<br/><br/>To simplify the UX & UI and enhance comprehension, the platform should display only one consultation's details at a time. For Follow-up consultations, an additional section named "Skin Progression" should be included in the consultation details. This section contains links to the parent cases, each directing to their respective case details. This setup allows patients to conveniently navigate between past and current treatments as needed.</li>
+									</ul>
+									<span class="image main"><img src="images/pic172.png" alt="" /></span>
+									<figcaption>Patient - Follow-up Consultation</figcaption>
+									<br>
+								</li>
+							</ol>
+							<!--Dermatologist-->
+							<h3>Dermatologist</h3>
+							<br/>
+							<ol>
+								<!--Probelem #1-->
+								<li><h4>View the patient's consultation history</h4><br>
+									<h5>Context</h5>
+							 		<p>When a patient submits multiple consultations via the platform, it's essential for the dermatologist to track all current and past consultations to ensure they can provide the best treatments during the consult.</p><br/>
+									<h5>Question</h5>
+									<p>"In a platform that primarily manages data on consultations rather than patients, how does the doctor view the collection of a patient's consultations up to the present? so that the doctor can: 1) Obtain an overview of all the patient's skin diseases; 2) Review information on each consultation, including diagnosis, treatments, and prescribed medications recommended to the patient."</p>
+
+									<h5>Solution</h5>
+									<p><i>View the patient's consultation history inside the active consultation.</i><br/>
+										In a specific consultation, include a link or button labeled [View Consultation History]. Clicking this opens a new screen displaying other cases of the same patient, sorted by submission date.<br/>Doctors can select each consultation from the list panel to view its details on the other side of the screen.<br/><br/>To avoid unnecessary interaction with the drilling down the "History Consults" again, a rule is applied. Following that, this feature is designed for reference purposes to assist doctors in accessing medical information. Therefore, it is intentionally designed to be read-only.</p>
+									<span class="image main"><img src="images/pic173.png" alt="" /></span>
+							 		<figcaption>Doctor - View Patient's Consultation History</figcaption>
+									<br/>
+								</li>
+
+								<!--Probelem #2-->
+								<li><h4>Display Follow-Up Consultations in the list</h4><br>
+									<h5>Context</h5>
+									<p>When the platform displays a list of consultations that includes both Main Consultations and Follow-Up Consultations, doctors need to differentiate between the types of each consultation. Simply adding a Consultation Type column to the list may not be the most effective solution, as it doesn't provide enough information. The platform should provide doctors with details such as: which cases are Follow-Up Consultations, how they relate to each other, and the correct order of these consultations in the list.</p><br/>
+								 <h5>Question</h5>
+								 <p>"How might we design a structure for the consultation list that enables doctors to easily differentiate between Main and Follow-Up consultations, while also allowing them to access detailed information about Follow-Up consultations when needed?"</p>
+
+								 <h5>Solution</h5>
+									<ul>
+										<li><i>Display Follow-Up consultations in the list alongside Main consultations.</i><br/>Essentially, a Follow-Up consultation is a new consultation. Therefore, logically, this consultation type should be included in the current list of consultations.</li><br/>
+										<li><i>Add Consultation Type column.</i><br/>Add a "Consultation Type" column to the list to indicate whether consultations are Main or Follow-up.</li><br/>
+										<li><i>List all Follow-Up cases directly linked to the current Follow-Up consultation.</i><br/>Link the previous cases to the current Follow-Up consultation by providing a way to expand the rows to see additional attached cases. Doctors can then select an attached case to view its details.</li><br/>
+										<li><i>Display Skin Progression.</i><br/>Include a "Skin Progression" section containing all previous cases in link format within the current consultation details. This allows the doctor to reference those cases directly from the current consultation.</li>
+									</ul>
+								 <span class="image main"><img src="images/pic174.png" alt="" /></span>
+									<figcaption>Doctor - Follow-Up Consultations</figcaption>
+								 <br/>
+							 </li>
+								</ol>
+
+								<!--Admin-->
+							<h3>Admin</h3>
+							<br/>
+							
+								<h4>Create Diagnosis & Treatment Templates</h4><br>
+								<h5>Context</h5>
+							 		<p>Diagnosing and treating patients is a routine task for doctors and nurses. It's a common occurrence in this line of work to repeatedly provide the same Diagnosis & Treatment plans due to the recurrence of typical skin problems.</p><br/>
+									<h5>Question</h5>
+									<p>"How might we offer doctors a quick way for Diagnosis & Treatment that saves time, accelerates the consulting process, and enhances productivity?"</p>
+
+									<h5>Solution</h5>
+									<ul>
+										<li><i>Allow practitioners to save Diagnosis & Treatment as a template for future use after completing the task.</i><br/>After submitting the Diagnosis & Treatment plans for a specific case, practitioners are able to save those Diagnosis and/or Treatment plans to the system for future consultations.</li><br/>
+										<li><i>Set up rules for creating and managing Diagnosis & Treatment templates within the clinic.</i><br/>Once the "Save As Template" feature is enabled for all clinic users, there is a possibility of multiple practitioners saving identical templates. To prevent this, two rules will be implemented:<br/><br/>
+										<p>- Admins are tasked with creating "global templates," which can be shared and utilized by all practitioners within the clinic.</p>
+										<p>- Practitioners will have the flexibility to create and manage their own templates. However, the platform intentionally allows them to save their work as "local templates," which will be accessible and used exclusively by the creator only.</p></li>
+									</ul>
+									<span class="image main"><img src="images/pic175.png" alt="" /></span>
+							 		<figcaption>Sace Diagnosis & Treatment as a template</figcaption>
+									<br/>
+							<h2>Testing</h2>
+							<h5>"To be continued..."</h5>
+							
+
+
+							<!--
+							<h5>Key insights:</h5>
+							<ol>
+								<li>Doctors will primarily contact their patients by phone for a remote appointment. Possible reasons are the cost of virtual solutions and issues around adopting a new system.</li>
+								<li>Most people felt that the convenience of a virtual appointment may remove frustrations associated with visiting a doctor but also created new challenges such as difficulty explaining their concerns to the doctor.</li>
+								<li>Most people will seek out advice before booking an appointment with a doctor. Family members are consulted and trusted more than google searches.</li>
+								<li>Most people don't want to keep copies of their medical records in the paper but want to keep them online.</li>
+							</ol>
+
+							<h3>Findings</h3>
+							<ol>
+								<li>Some patients ca not upload a photo of skin to the application during the onboarding process. Actually, this is the technical issue originally because of the file format limitation. However, this also shows the lack of usability here that the app does not guide the end users clearly. It does effect to the experience of them at first of using the app.</li>
+								<li>People have a demand to look through the onboarding process, at least several steps to get the concept of the app, how it works, etc. then they will not block them if they are not the registered patients yet.</li>
+								<li>Doctor - </li>
+								<li>People managing their family members' healthcare face similar problems as 1,2,3 above.</li>
+							</ol>
+							-->
+
+						</div>
+					</section>
+				</div>	
+
+						
+
+				<div id="main" class="alt">
+		
+					<section id="one">
+						<div class="inner">	
+							<h4 class="devider">...</h4>
+							<h1>Conclusions</h1>
+							<h4>Next step</h4>
+							<ul>
+								<li>Develop the platform setup in term of UI/UX design for B2B to enable customers to integrate the platform into their services.</li>
+								This includes creating a Guided Onboarding to help customers navigate the setup and configuration steps effectively.
+							</ul>
+								<h4>What I learned</h4>
+								<ul>
+									<li>It was about the unique challenges and considerations when designing applications for the healthcare industry, such as privacy and security.</li>
+									<li>I was enable to continue exploring and maintaining how to create a consistent user experience across different devices and screen sizes.</li>
+									<li>Pay attention to accessibility standards and guidelines, such as WCAG (Web Content Accessibility Guidelines), and was trying to apply them to the design.</li>
+									
+								</ul>
+								
+						</div>
+					</section>
+					<div class="pag">
+						<ul class="pagination">
+							<li><a href="careplus.html" class="page active">CarePlus</a></li>
+							<li><a href="mealprep.html" class="page active">Weekly Meal Prep</a></li>
+							<li><a href="vplapp.html" class="page">VPL App</a></li>
+							<li><a href="onixwebsite.html" class="page">Onix Website</a></li>
+							<li><a href="onixwork.html" class="page">Onix Work</a></li>
+							<li><a href="onixworker.html" class="page">Onix Worker</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="mailto:jasminevn1805@gmail.com" class="icon solid alt fa-envelope"><span class="label">Gmail</span></a></li>
+								<li><a href="https://www.linkedin.com/in/jasmine-hoang/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; 2019 Jasmine Hoang Portfolio</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
